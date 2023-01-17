@@ -48,8 +48,13 @@ main {
 
 .buttons {
   height: 55px;
-  padding: 15px 50px 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #F6F8F9;
+}
+
+.buttons, .tasks {
+  padding-left: 50px;
 }
 
 .button {
@@ -68,4 +73,35 @@ main {
   background-color: white;
   border: 1px solid #C8CED3; 
   color: #C8CED3; 
+}
+
+/* Tasks */
+
+.task {
+  margin-top: 30px;
+}
+
+.task ul {
+  list-style: none;
+}
+
+.task .circle::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  margin: 10px 10px 0 0;
+}
+
+.circle.done::before {
+  content: "\2714";
+  color: #65C1AA;
+}
+
+.circle.todo::before {
+  content: "\2716";
+  color: #EC564C;
 }
