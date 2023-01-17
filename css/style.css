@@ -1,0 +1,36 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Containers */
+
+body {
+  background-color: rgb(15, 14, 14);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90vw;
+  margin: 20px auto;
+}
+
+/* Header */
+
+header {
+  height: 70px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.title-logo {
+  display: inline-block;
+  font-size: 38px;
+}
+
+.image-logo, .title-logo {
+  vertical-align: middle;
+}
