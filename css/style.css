@@ -81,6 +81,16 @@ main {
   margin-top: 30px;
 }
 
+.task h2 {
+  font-size: 20px;
+}
+
+.task h2::before {
+  content: "\25BE";
+  font-size: 28px;
+  vertical-align: sub;
+}
+
 .task ul {
   list-style: none;
 }
@@ -93,7 +103,7 @@ main {
   border-radius: 50%;
   font-size: 10px;
   text-align: center;
-  margin: 10px 10px 0 0;
+  margin: 10px 10px 0 6px;
 }
 
 .circle.done::before {
