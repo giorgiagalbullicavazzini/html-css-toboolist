@@ -13,8 +13,12 @@ body {
 }
 
 .container {
-  width: 90vw;
-  margin: 20px auto;
+  position: absolute;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 150px;
   background-color: #F6F8F9;
   font-family: 'Roboto', sans-serif;
 }
@@ -39,8 +43,10 @@ header {
 /* Main */
 
 main {
-  width: 60vw;
-  margin: 30px auto;
+  width: 50vw;
+  border-radius: 5px;
+  margin: 30px auto 0;
+  padding-bottom: 30px;
   background-color: white;
 }
 
@@ -50,7 +56,7 @@ main {
   height: 55px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #F6F8F9;
+  border-bottom: 2px solid #F6F8F9;
 }
 
 .buttons, .tasks {
@@ -61,6 +67,7 @@ main {
   height: 30px;
   padding: 5px 12px;
   border-radius: 5px;
+  margin-left: 6px;
 }
 
 .button.blue {
@@ -91,8 +98,15 @@ main {
   vertical-align: sub;
 }
 
+/* Marker */
+
 .task ul {
   list-style: none;
+}
+
+.task .circle {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .task .circle::before {
@@ -114,4 +128,46 @@ main {
 .circle.todo::before {
   content: "\2716";
   color: #EC564C;
+}
+
+/* Category */
+
+.task .circle::after {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 11px;
+  font-size: 11px;
+  color: white;
+}
+
+.circle.editorial::after {
+  content: "Editorial";
+  background-color: #45ABEA;
+}
+
+.circle.goals::after {
+  content: "Q1 Goals";
+  background-color: #9C72E4;
+}
+
+.circle.recruit::after {
+  content: "Recruiting";
+  background-color: #65C1AA;
+}
+
+.circle.mobile::after {
+  content: "Mobile";
+  background-color: #F29E33;
+}
+
+.circle.website::after {
+  content: "Website";
+  background-color: #D863A1;
+}
+
+.circle.sales::after {
+  content: "Sales";
+  background-color: #B0C926;
 }
