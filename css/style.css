@@ -10,12 +10,13 @@
 
 body {
   background-color: rgb(15, 14, 14);
-  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   width: 90vw;
   margin: 20px auto;
+  background-color: #F6F8F9;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -33,4 +34,12 @@ header {
 
 .image-logo, .title-logo {
   vertical-align: middle;
+}
+
+/* Main */
+
+main {
+  width: 60vw;
+  margin: 30px auto;
+  background-color: white;
 }
